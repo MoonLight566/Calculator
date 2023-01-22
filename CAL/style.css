@@ -1,0 +1,59 @@
+body{
+    display: flex;
+    justify-content: center;
+    background-color: #EBECF1;
+}
+.all{
+    background-color: #b72be2;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center; 
+}
+.dis{
+    width: 280px;
+    height: 50px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+button{
+    /* display: inline;
+    flex-direction: column; */
+    width: 68px;
+    height: 50px;
+    border:2px solid gray;
+    border-radius: 5px;
+    /* align-self: flex-start; */
+}
+.clr{
+    display: flex;
+    justify-content: center;
+}
+.clr button{
+    width:142px;
+}
+.num{
+    background-color: #D8E3E7;
+}
+.opreter{
+    background-color: #B2B1B9;
+}
+.equal{
+    background-color: #00ADB5;
+}
+.decimal{
+    background-color: #B2F9FC;
+}
+.AC{
+    background-color: #FF1818;
+}
+.delete{
+    background-color: #FF0075;
+}
