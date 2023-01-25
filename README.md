@@ -1,2 +1,2 @@
 # Calculator
-The odin project calculator
+The odin project calculator with buttons 
