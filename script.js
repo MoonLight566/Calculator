@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded",function(){
     clear.addEventListener('click',()=>{
         num2='';
         num1="";
-        screan.textContent="0" 
+        screan.style.color='black';
+        screan.textContent="0";
         operator='';});
     equal.addEventListener('click',()=>{
         if(num2==="0"){
@@ -33,10 +34,12 @@ document.addEventListener("DOMContentLoaded",function(){
          
             screan.innerHTML=text;
             screan.style.color='red';
+            setTimeout(screan,5000);
             }
+            
        else if(num2!=''&&num1!=''){
         caculator();
-
+        
         screan.textContent=num1;}    
     });
 
