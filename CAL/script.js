@@ -19,8 +19,8 @@ document.addEventListener("DOMContentLoaded",function(){
         screan.textContent+=operator;
     }))
     delet.addEventListener('click',()=>{
-       num2=num2.slice(0, -1);
-       screan.textContent=num1+operator+ num2;
+        num2=num2.slice(0, -1);
+        screan.textContent=num1+operator+ num2;
     });
     clear.addEventListener('click',()=>{
         num2='';
@@ -28,12 +28,18 @@ document.addEventListener("DOMContentLoaded",function(){
         screan.textContent="0" 
         operator='';});
     equal.addEventListener('click',()=>{
-        if(num2!=''&&num1!=''){
+        if(num2==="0"){
+         const text ="<strong>Can't divide by Zero</strong>";
+         
+            screan.innerHTML=text;
+            screan.style.color='red';
+            }
+       else if(num2!=''&&num1!=''){
         caculator();
 
-        screan.textContent=num1;}  
-        
+        screan.textContent=num1;}    
     });
+
     decimal.addEventListener('click',()=>{
         Decimal();
     });
@@ -61,21 +67,20 @@ document.addEventListener("DOMContentLoaded",function(){
                       num1*=num2;
                 }
                 else if(operator==="/"){
-                      num1/=num2; 
-                }
+                      num1/=num2; }
                num1=round(num1);
                num1=num1.toString();
                num2=num1.toString();    
     }
     
 function round(num){
-return Math.round(num*1000)/1000;
+    return Math.round(num*1000)/1000;
 }
 
 function Decimal(){
-if(!num2.includes('.')){
-    num2 +='.';      
-}
+    if(!num2.includes('.')){
+        num2 +='.';      }
+
 }
 
 
